@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script language="javascript" type="text/javascript">
+            function Capital(string){
+                return string.toUpperCase();
+            }
+        </script>
+        
+        <style>
+            .center1 {
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 27%;
+                    }
+
+                a {
+                    text-decoration: none;
+                    font-size: 22px;
+                    color: black;
+                  }
+        </style>
+    </head>
+    <body>
+        
+        
+        <h1 style="margin-left:650px">Feedback Form</h1>
+        
+         <ul class="center1">
+			<a href="home.html" style="margin-left:20px">Home</a>
+			<a href="gallery.html" style="margin-left:30px">Photo Gallery</a>
+			<a href="education.html" style="margin-left:20px">Current Course<a/>
+                        <a href="contact.html" style="margin-left:55px">Contact<a/>
+                        <a href="feedback.html" style="margin-left:30px">Feedback Form<a/>
+        </ul>
+
+        <br><br>
+                
+        <p>Welcome to <b>Farah's Profile</b> Feedback Form. Please share<br>
+        your comments regarding this profile website.</p>
+        
+       
+        <hr size="5">
+        <br>
+        
+        <form name="input" action="process.jsp" method="get">
+            
+            Salutation:<input type="radio" name="sal" value="Mr" checked="checked" />Mr
+            <input type="radio" name="sal" value="Mrs" />Mrs
+            <input type="radio" name="sal" value="Ms" />Ms
+            <input type="radio" name="sal" value="Miss" />Miss
+            <br><br>
+            Name:
+            <hr>
+            <input type="text" name="name" value="" size="40" required onchange="this.value=Capital(this.value);"/>
+           
+            <br><br>
+            Email Address:
+            <hr>
+            <input type="email" name="email" value="" size="50" />
+            
+            <br><br>
+            Phone Number:
+            <hr>
+            <input type="text" name="phoneNum" value="" />
+            
+            <br><br>
+            <hr>
+            <p><b>Details about your Experience</b></p>
+        
+        
+            <select name="feedback" placeholder="Select from List">
+                <option value="1">I am having fun!</option>
+                <option value="2">I am not sure..</option>
+                <option value="3">I think it can be improve</option>
+            </select>
+            
+            <br><br>
+            
+            <p><b>Date of writing this feedback</b></p>
+            <hr>
+            <input type="date" name="date" value="" />
+            
+            <br><br>
+            <b>Your Feedback</b>
+            <hr>
+            <textarea name="comment" rows="4" cols="20">
+            </textarea>
+            
+            <br><br>
+            <button onclick="window.location.href='response.html'">Submit</button>
+        </form>
+    </body>
+</html>

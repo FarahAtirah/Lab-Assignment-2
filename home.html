@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                background-image: url('bg1.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            
+            .center1 {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 27%;
+		}
+                
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+              }
+
+		
+            * {
+              box-sizing: border-box;
+            }
+
+            /* Create two unequal columns that floats next to each other */
+            .column {
+              float: left;
+              padding: 10px;
+              height: 300px; /* Should be removed. Only for demonstration */
+            }
+
+            .left {
+              width: 65%;
+            }
+
+            .right {
+              width: 35%;
+              font-size: 65px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <h1 style="margin-left:600px; font-size:70px">Farah Atirah</h1>
+        
+        
+        <ul class="center1">
+			<a href="home.html" style="margin-left:42px">Home</a>
+			<a href="gallery.html" style="margin-left:25px">Gallery</a>
+			<a href="education.html" style="margin-left:20px">Current Course<a/>
+                        <a href="contact.html" style="margin-left:65px">Contact<a/>
+                        <a href="feedback.html" style="margin-left:30px">Feedback Form<a/>
+        </ul>
+        
+        <br><br>
+        
+        <div class="row">
+          <div class="column left" style="background-color:#aaa;">
+            <p style="margin-left:20px; margin-top:105px";>I am 21 years old woman that currently living her life to the fullest.<br>
+            My name is Farah Atirah and I'm staying at Selangor, Malaysia.<br>
+            I'm a student at UiTM Kuala Terengganu.</p>
+          </div>
+          <div class="column right" style="background-color:#bbb;">
+            <h2 style="margin-left:60px";>Hi</h2>
+          </div>
+        </div>
+
+    </body>
+</html>
